@@ -73,16 +73,13 @@ function asAmirror(frase) {
    // La diferencia es que cada palabra estará escrita al inverso.
    // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
    // Tu código:
-   let arra = frase.split(" ")
-for (let i = 0; i < arra.length; i++) {
-   arra[i] = arra[i].split("")
-   arra[i] = arra[i].reverse()
-   arra[i] = arra[i].join("")
-}
+//    let arra = frase.split(" ")
+// for (let i = 0; i < arra.length; i++) {
+//    arra[i] = arra[i].split("").reverse().join("")
+// } return arra.join(" ")
 
-
-return arra.join(" ")
-
+let arr = frase.split(" ").map(e =>  e.split("").reverse().join("")).join(" ");
+ return arr
 }
 
 function capicua(numero) {
