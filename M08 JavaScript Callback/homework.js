@@ -60,12 +60,9 @@ function map(array, cb) {
    // Tiene que guardar el resultado devuelto por el callback en cada elemento dentro de un nuevo arreglo.
    // Retorna el nuevo arreglo.
    // Tu código:
-   let nuevoArr = []
-   array.map(element => {
-   nuevoArr.push(cb(element))  
+  
+   return array.map(element => cb(element));
 
-   });
-return nuevoArr
 }
 
 function filter(arrayOfStrings) {
